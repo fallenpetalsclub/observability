@@ -1,0 +1,47 @@
+digraph root {
+	fontcolor="#2D3436";
+	fontname="Sans-Serif";
+	fontsize=13;
+	label="Observability Infra";
+	nodesep=0.6;
+	pad=2;
+	rankdir=LR;
+	ranksep=0.75;
+	splines=ortho;
+	urfngpyx->tsorrgem[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	urfngpyx->rhyovhaf[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	urfngpyx->cknlrmxs[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	urfngpyx->gqjhemqa[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	subgraph cluster_server {
+	bgcolor="#ECE8F6";
+	fontcolor="#2D3436";
+	fontname="Sans-Serif";
+	fontsize=12;
+	label=Server;
+	labeljust=l;
+	pencolor="#AEB6BE";
+	shape=box;
+	style=rounded;
+	subgraph clusterobservability {
+	bgcolor="#EBF3E7";
+	fontcolor="#2D3436";
+	fontname="Sans-Serif";
+	fontsize=12;
+	label=Observability;
+	labeljust=l;
+	pencolor="#AEB6BE";
+	shape=box;
+	style=rounded;
+	cknlrmxs [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=2.1999999999999997, image="assets/oci/database/science.png", imagescale=true, label=Logging, labelloc=b, shape=none, style=rounded, width=1.4 ];
+	gqjhemqa [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=2.1999999999999997, image="assets/oci/database/science.png", imagescale=true, label=Tracing, labelloc=b, shape=none, style=rounded, width=1.4 ];
+	rhyovhaf [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=2.1999999999999997, image="assets/oci/database/science.png", imagescale=true, label=Profiling, labelloc=b, shape=none, style=rounded, width=1.4 ];
+	tsorrgem [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=2.1999999999999997, image="assets/oci/database/science.png", imagescale=true, label=Metrics, labelloc=b, shape=none, style=rounded, width=1.4 ];
+
+}
+;
+	urfngpyx [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=2.1999999999999997, image="assets/oci/database/dis.png", imagescale=true, label=Service, labelloc=b, shape=none, style=rounded, width=1.4 ];
+
+}
+;
+
+}
